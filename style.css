@@ -24,16 +24,19 @@ body {
   font-family: 'Inter', 'Noto Sans Arabic', -apple-system, sans-serif;
   background-color: #fafafa;
   color: var(--foreground);
-  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
+  padding: 1.5rem;
   display: flex;
   justify-content: center;
-  padding: 3rem 1.5rem;
+  box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
 }
 
 .app-container {
   width: 100%;
   max-width: 780px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -242,4 +245,20 @@ h1 {
   justify-content: center;
   font-size: 0.875rem;
   font-weight: 500;
+}
+
+.footer {
+  margin-top: auto;
+  padding: 0.75rem 0 0 0;
+  text-align: center;
+  font-size: 0.8125rem;
+  color: var(--muted-foreground);
+  border-top: none;
+}
+.footer a {
+  color: var(--foreground);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.15s ease;
+  opacity: 90;
 }

@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const keyboardContainer = document.getElementById('keyboard')
   const clearBtn = document.getElementById('clearBtn')
   const copyBtn = document.getElementById('copyBtn')
+  document.getElementById('year').textContent = new Date().getFullYear();
 
   const keyboardLayout = [
     [
